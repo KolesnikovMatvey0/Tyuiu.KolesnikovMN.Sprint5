@@ -21,7 +21,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
                 for ( int i = 0; i < nums.Length; i++)
                 {
                     nums[i] = nums[i].Replace('.', ',');
-                    if ( res < Convert.ToDouble(nums[i]) )
+                    if ( res < Convert.ToDouble(nums[i]) && Convert.ToInt32(nums[i]) == Convert.ToDouble(nums[i]) )
                         res = Convert.ToDouble(nums[i]);
                 }
             }
