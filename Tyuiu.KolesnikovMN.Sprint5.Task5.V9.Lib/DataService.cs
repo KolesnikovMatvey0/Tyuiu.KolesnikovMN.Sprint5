@@ -18,10 +18,11 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
                 //}
                 string line = reader.ReadLine();
                 string[] nums = line.Split();
-                foreach ( string num in nums )
+                for ( int i = 0; i < nums.Length; i++)
                 {
-                    if ( res < Convert.ToDouble(num) )
-                        res = Convert.ToDouble(num);
+                    nums[i] = nums[i].Replace('.', ',');
+                    if ( res < Convert.ToDouble(nums[i]) )
+                        res = Convert.ToDouble(nums[i]);
                 }
             }
             return res;
