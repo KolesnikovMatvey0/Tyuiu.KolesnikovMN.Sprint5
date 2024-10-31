@@ -9,23 +9,12 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
             double res = double.MinValue;
             using ( StreamReader reader = new StreamReader(path) )
             {
-                //string line;
-                //while ( ( line = reader.ReadLine() ) != null)
-                //{
-                //    line = line.Replace('.', ',');
-                //    if ( res < Convert.ToDouble( line ) )
-                //        res = Convert.ToDouble( line );
-                //}
-                string line = reader.ReadLine();
-                string[] nums = line.Split();
-                for ( int i = 0; i < nums.Length; i++)
+                string line;
+                while ( ( line = reader.ReadLine() ) != null)
                 {
-                    nums[i] = nums[i].Replace('.', ',');
-                    if ( Convert.ToDouble(nums[i]) % 10 == 0 )
-                    {
-                        if (res < Convert.ToDouble(nums[i]))
-                            res = Convert.ToDouble(nums[i]);
-                    }
+                    line = line.Replace('.', ',');
+                    if ( res < Convert.ToDouble( line ) )
+                        res = Convert.ToDouble( line );
                 }
             }
             return res;
