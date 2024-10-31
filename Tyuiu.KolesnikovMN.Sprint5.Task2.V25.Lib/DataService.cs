@@ -35,15 +35,20 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task2.V25.Lib
             {
                 for ( int j = 0;j < columns; j++ )
                 {
-                    str += matrix[i, j] + ";";
-                }
+                    if (i != columns - 1)
+                        str += matrix[i, j] + ";";
+                    else
+                        str += matrix[i, j];
 
-                if ( i != columns - 1 )
-                    File.AppendAllText( path, str + Environment.NewLine );
+                }
+                
+                if (i != rows - 1)
+                    File.AppendAllText(path, str + Environment.NewLine);
 
                 else
-                    File.AppendAllText( path, str );
+                    File.AppendAllText(path, str);
                 str = "";
+
             }
 
             
