@@ -35,7 +35,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task2.V25.Lib
             {
                 for ( int j = 0;j < columns; j++ )
                 {
-                    if (i != columns - 1)
+                    if (j != columns - 1)
                         str += matrix[i, j] + ";";
                     else
                         str += matrix[i, j];
