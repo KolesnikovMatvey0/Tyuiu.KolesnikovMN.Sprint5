@@ -12,6 +12,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
                 string line;
                 while ( ( line = reader.ReadLine() ) != null)
                 {
+                    line = line.Replace('.', ',');
                     if ( res < Convert.ToDouble( line ) )
                         res = Convert.ToDouble( line );
                 }
