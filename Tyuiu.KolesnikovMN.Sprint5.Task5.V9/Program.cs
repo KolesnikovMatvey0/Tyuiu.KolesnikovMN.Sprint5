@@ -11,7 +11,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Чтение набора данных из текстового файла                          *");
             Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Колесников Матвей Николаевич | РППб-24-1                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -30,7 +30,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9
 
             string path = @"C:\DataSprint5\InPutDataFileTask5V9.txt";
 
-            Console.WriteLine($"Данные находится в файле = {path}");
+            Console.WriteLine($"Данные находится в файле = { path }");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
@@ -38,7 +38,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9
 
             double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine($"Максимальный элемент = {res}");
+            Console.WriteLine($"Максимальный элемент = { res }");
             Console.ReadKey();
         }
     }
