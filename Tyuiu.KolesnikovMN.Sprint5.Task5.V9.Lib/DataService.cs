@@ -2,7 +2,7 @@
 
 namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
 {
-    public class DataService : ISprint5Task5V7
+    public class DataService : ISprint5Task5V9
     {
         public double LoadFromDataFile(string path)
         {
