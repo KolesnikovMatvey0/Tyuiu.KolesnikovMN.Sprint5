@@ -6,7 +6,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double res = double.MinValue;
+            double res = double.MaxValue;
             using ( StreamReader reader = new StreamReader(path) )
             {
                 //string line;
