@@ -25,7 +25,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task6.V17
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
 
             string path = @"C:\DataSprint5\InPutDataFileTask6V17.txt";
 
