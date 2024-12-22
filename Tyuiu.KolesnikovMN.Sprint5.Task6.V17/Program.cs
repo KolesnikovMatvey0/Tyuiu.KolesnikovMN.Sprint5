@@ -27,7 +27,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task6.V17
 
             DataService ds = new DataService();
 
-            string[] paths = {$@"{Path.GetTempPath()}","InPutDataFileTask6V17.txt"};
+            string[] paths = {$@"{Path.GetTempPath()}","InPutDataFileTask6.txt"};
             string path = Path.Combine(paths);
 
             Console.WriteLine($"Данные находится в файле = {path}");
