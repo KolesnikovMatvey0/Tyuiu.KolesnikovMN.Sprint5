@@ -6,8 +6,14 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task7.V27.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckExistsFile()
         {
+            string path = @"C:\Users\Matvey\AppData\Local\Temp\OutPutDataFileTask7V27.txt";
+
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            
+            Assert.IsTrue(fileExists);
         }
     }
 }
