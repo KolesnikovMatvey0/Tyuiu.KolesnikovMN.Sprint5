@@ -10,10 +10,11 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
             using ( StreamReader reader = new StreamReader(path) )
             {
                 string line;
-                while ( ( line = reader.ReadLine() ) != null)
+                string[] values;
+                while ((line = reader.ReadLine()) != null)
                 {
                     if ( res < Convert.ToDouble( line ) )
-                        res = Math.Round( Convert.ToDouble( line ), 3 );
+                        res = Math.Round(Convert.ToDouble(line), 3);
                 }
             }
             return res;
