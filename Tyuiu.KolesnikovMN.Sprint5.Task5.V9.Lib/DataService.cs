@@ -13,8 +13,12 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task5.V9.Lib
                 string[] values;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if ( res < Convert.ToDouble( line ) )
-                        res = Math.Round(Convert.ToDouble(line), 3);
+                    values = line.Split();
+                    for (int i = 0; i < values.Length; i++)
+                    {
+                        if (res < double.Parse(values[i], System.Globalization.CultureInfo.InvariantCulture))
+                            res = Math.Round(double.Parse(values[i], System.Globalization.CultureInfo.InvariantCulture), 3);
+                    }
                 }
             }
             return res;
