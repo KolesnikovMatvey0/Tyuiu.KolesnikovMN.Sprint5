@@ -20,7 +20,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task6.V17.Lib
                         if (line[i] != ' ')
                             chCount = 0;
                         if (chCount > 1)
-                            count += chCount;
+                            count += chCount - 1;
 
                             
                     }
