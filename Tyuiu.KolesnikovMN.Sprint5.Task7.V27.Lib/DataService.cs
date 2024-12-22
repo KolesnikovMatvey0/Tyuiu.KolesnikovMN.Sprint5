@@ -27,7 +27,7 @@ namespace Tyuiu.KolesnikovMN.Sprint5.Task7.V27.Lib
                     {
                         if (line[i] == ' ')
                             count++;
-                        if (count < 2)
+                        if (count < 1)
                             strLine += line[i];
                         else
                             count = 0;
